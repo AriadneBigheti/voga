@@ -22,6 +22,7 @@ class QuizFeedbackCardView: UIView {
         let containerView = UIView()
         containerView.backgroundColor = UIColor.appColor(.backgroundWhite)
         containerView.layer.cornerRadius = 40
+        containerView.isAccessibilityElement = true
         
         return containerView
     }()
@@ -81,6 +82,7 @@ class QuizFeedbackCardView: UIView {
         feedbackTitleLabel.text = model.quizFeedback
         feedbackTextLabel.text = model.quizFeedbackExplanation
         illustrativeImage.image = UIImage(named: model.quizFeedbackImage)
+        containerView.accessibilityLabel = "\(feedbackTitleLabel.text!). \(feedbackTextLabel.text!)"
     }
     
     func setColors(_ color: UIColor) {

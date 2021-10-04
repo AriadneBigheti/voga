@@ -39,6 +39,8 @@ class QuizView: UIView {
         progressView.progressTintColor = UIColor.appColor(.clickableGreen)
         progressView.backgroundColor = UIColor.appColor(.gray)
         progressView.layer.cornerRadius = 4
+        progressView.isAccessibilityElement = true
+        progressView.accessibilityLabel = "Barra de Progresso"
         
         return progressView
     }()
