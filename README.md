@@ -47,6 +47,9 @@ This project uses MVP with Coordinator architecture pattern.
 ## Tools and Practices
 
 View Code using UIKit to create views;
+
 Firebase/Cloudkit for external database;
+
 CocoaPods for dependency management;
+
 Figma to prototype.
