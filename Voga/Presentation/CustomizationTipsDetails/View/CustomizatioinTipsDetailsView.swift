@@ -21,7 +21,8 @@ class CustomizationTipsDetailsView: UIView {
         button.layer.cornerRadius = 18
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(didTapCloseButton), for: .touchUpInside)
-        
+        button.isAccessibilityElement = true
+        button.accessibilityLabel = "Fechar"
         return button
     }()
     

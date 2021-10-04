@@ -21,6 +21,7 @@ class CustomizationTipsDetailsHeaderDescriptionView: UIView {
     private lazy var containerView: UIView = {
         let containerView = UIView()
         containerView.backgroundColor = .appColor(.backgroundWhite)
+        containerView.isAccessibilityElement = true
         return containerView
      }()
 
@@ -56,6 +57,7 @@ class CustomizationTipsDetailsHeaderDescriptionView: UIView {
         titleLabel.attributedText = newStringStyle(customizationTip.details.subtitle, color: UIColor.appColor(assetColor))
         descriptionLabel.text = customizationTip.details.description
         descriptionImage.image = UIImage(named: customizationTip.details.descriptionImage)
+        containerView.accessibilityLabel = "\(titleLabel.text!), \(descriptionLabel.text!)"
     }
 
 }

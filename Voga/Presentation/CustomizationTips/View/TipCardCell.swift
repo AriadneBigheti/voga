@@ -11,8 +11,9 @@ class TipCardCell: UICollectionViewCell {
 
     private lazy var containerView: UIView = {
         let containerView = UIView()
+        containerView.isAccessibilityElement = true
         containerView.backgroundColor = .appColor(.backgroundWhite)
-        containerView.layer.cornerRadius = 40
+        containerView.layer.cornerRadius = 20
 
         return containerView
      }()
@@ -34,14 +35,17 @@ class TipCardCell: UICollectionViewCell {
         let label = VogaLabel(font: .AtkinsonRegular(size: 17))
         label.textColor = .appColor(.darkGrayFont)
         label.numberOfLines = 0
-
+        
         return label
     }()
 
     func configure(with customizationTip: CustomizationTip) {
         title.text = customizationTip.category.capitalized
         subtitle.text = customizationTip.card.title
+        //subtitle.configureSpacing(value: 0.41, for: .horizontal)
+        //subtitle.configureSpacing(value: 5, for: .vertical)
         image.image = UIImage(named: customizationTip.card.image)
+        containerView.accessibilityLabel = "\(title.text!), \(subtitle.text!)"
     }
 
     override init(frame: CGRect) {
@@ -52,6 +56,7 @@ class TipCardCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+        
 }
 
 extension TipCardCell: ViewCodeProtocol {

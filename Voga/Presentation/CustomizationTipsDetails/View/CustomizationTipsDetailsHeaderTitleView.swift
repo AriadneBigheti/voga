@@ -12,6 +12,7 @@ class CustomizationTipsDetailsHeaderTitleView: UIView {
     private lazy var containerView: UIView = {
         let containerView = UIView()
         containerView.clipsToBounds = true
+        containerView.isAccessibilityElement = true
         return containerView
      }()
 
@@ -49,6 +50,7 @@ class CustomizationTipsDetailsHeaderTitleView: UIView {
         image.image = UIImage(named: customizationTip.details.titleImage)
         let assetColor = AssetsColor.getFromString(colorName: customizationTip.secondaryTheme)
         containerView.backgroundColor = .appColor(assetColor)
+        containerView.accessibilityLabel = "\(title.text!), \(subtitle.text!)"
     }
 
     override init(frame: CGRect) {
