@@ -19,21 +19,15 @@ class StepView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private lazy var numberOfStep: UILabel = {
-        let vogaLabel = UILabel()
-        vogaLabel.font = VogaFonts.AtkinsonBold(size: 50).uiFont
-        vogaLabel.numberOfLines = 0
-        vogaLabel.text = "1."
-        vogaLabel.textColor = .systemPink
+    private lazy var numberOfStep: VogaLabel = {
+        let vogaLabel = VogaLabel(font: .AtkinsonItalicBold(size: 50))
+        vogaLabel.textColor = .appColor(.darkPink)
 
         return vogaLabel
     }()
 
-    private lazy var descriptionStep: UILabel = {
-        let vogaLabel = UILabel()
-        vogaLabel.font = VogaFonts.AtkinsonRegular(size: 17).uiFont
-        vogaLabel.numberOfLines = 0
-        vogaLabel.text = ""
+    private lazy var descriptionStep: VogaLabel = {
+        let vogaLabel = VogaLabel(font: .AtkinsonRegular(size: 17))
 
         return vogaLabel
     }()

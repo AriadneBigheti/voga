@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CustomizationTipsDetailsPresentationLogic: AnyObject {
-
+    func closeTipsScreen()
 }
 
 class CustomizationTipsDetailsPresenter: CustomizationTipsDetailsPresentationLogic {
@@ -16,5 +16,9 @@ class CustomizationTipsDetailsPresenter: CustomizationTipsDetailsPresentationLog
 
     init(coordinatorDelegate: CustomizationTipsDetailsCoordinatorLogic) {
         self.coordinator = coordinatorDelegate
+    }
+    
+    func closeTipsScreen() {
+        coordinator?.dismissViewController()
     }
 }

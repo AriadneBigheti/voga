@@ -11,7 +11,20 @@ class CustomizationTipsDetailsView: UIView {
 
     private weak var presenter: CustomizationTipsDetailsPresentationLogic?
     private var customizationTip: CustomizationTip
-
+    
+    private lazy var closeButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .darkGray.withAlphaComponent(0.3)
+        button.titleLabel?.font = VogaFonts.AtkinsonBold(size: 20).uiFont
+        button.setTitle("X", for: .normal)
+        button.setTitleColor(.darkGray.withAlphaComponent(0.5), for: .normal)
+        button.layer.cornerRadius = 18
+        button.clipsToBounds = true
+        button.addTarget(self, action: #selector(didTapCloseButton), for: .touchUpInside)
+        
+        return button
+    }()
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView.estimatedRowHeight = 530
@@ -36,9 +49,10 @@ class CustomizationTipsDetailsView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private lazy var questionLabel: UILabel = {
-        let label = UILabel()
-        label.attributedText = newStringStyle(customizationTip.details.subtitle, color: VogaColors.getFromString(colorName: customizationTip.theme))
+    private lazy var questionLabel: VogaLabel = {
+        let label = VogaLabel()
+        let assetColor = AssetsColor.getFromString(colorName: customizationTip.theme)
+        label.attributedText = newStringStyle(customizationTip.details.subtitle, color: .appColor(assetColor))
 
         return label
     }()
@@ -50,26 +64,37 @@ class CustomizationTipsDetailsView: UIView {
 
         return stackView
     }()
-
+    
+    @objc func didTapCloseButton() {
+        presenter?.closeTipsScreen()
+    }
 }
 
 extension CustomizationTipsDetailsView: ViewCodeProtocol {
     func setupHierarchy() {
         addSubview(tableView)
+        addSubview(closeButton)
     }
 
     func setupConstraints() {
+        closeButton.constraint { view in
+            [view.topAnchor.constraint(equalTo: safeArea().topAnchor, constant: 15),
+             view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+             view.heightAnchor.constraint(equalToConstant: 36),
+             view.widthAnchor.constraint(equalToConstant: 36)]
+        }
+        
         tableView.constraint { view in
             [view.centerXAnchor.constraint(equalTo: centerXAnchor),
               view.leadingAnchor.constraint(equalTo: leadingAnchor),
               view.trailingAnchor.constraint(equalTo: trailingAnchor),
-              view.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+              view.topAnchor.constraint(equalTo: topAnchor),
               view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)]
         }
     }
 
     func additionalSetup() {
-        backgroundColor = VogaColors.backgroundColor.uiColor
+        backgroundColor = .appColor(.background)
     }
 }
 

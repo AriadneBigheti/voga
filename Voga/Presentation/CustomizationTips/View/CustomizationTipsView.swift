@@ -49,13 +49,13 @@ extension CustomizationTipsView: ViewCodeProtocol {
             [view.centerXAnchor.constraint(equalTo: centerXAnchor),
               view.leadingAnchor.constraint(equalTo: leadingAnchor),
               view.trailingAnchor.constraint(equalTo: trailingAnchor),
-              view.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+              view.topAnchor.constraint(equalTo: topAnchor, constant: 15),
               view.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80)]
         }
     }
 
     func additionalSetup() {
-        backgroundColor = VogaColors.backgroundColor.uiColor
+        backgroundColor = .appColor(.background)
     }
 }
 

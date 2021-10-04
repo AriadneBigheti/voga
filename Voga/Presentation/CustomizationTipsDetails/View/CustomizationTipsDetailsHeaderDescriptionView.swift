@@ -20,38 +20,40 @@ class CustomizationTipsDetailsHeaderDescriptionView: UIView {
 
     private lazy var containerView: UIView = {
         let containerView = UIView()
-        containerView.backgroundColor = .white
+        containerView.backgroundColor = .appColor(.backgroundWhite)
         return containerView
      }()
 
     private lazy var imageBackground: UIView = {
         let imageBackground = UIView()
-        imageBackground.backgroundColor = .white
+        imageBackground.backgroundColor = .appColor(.backgroundWhite)
         imageBackground.layer.masksToBounds = true
         return imageBackground
      }()
 
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 2
+    private lazy var titleLabel: VogaLabel = {
+        let label = VogaLabel()
+        
         return label
     }()
 
-    private lazy var descriptionLabel: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 17).uiFont
-        label.numberOfLines = 5
+    private lazy var descriptionLabel: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonRegular(size: 17))
+        
         return label
     }()
 
     private lazy var descriptionImage: UIImageView = {
         let rectangle = UIImageView()
         rectangle.contentMode = .scaleAspectFit
+        
         return rectangle
     }()
 
     func configure(with customizationTip: CustomizationTip) {
-        titleLabel.attributedText = newStringStyle(customizationTip.details.subtitle, color: VogaColors.getFromString(colorName: customizationTip.theme))
+        let assetColor = AssetsColor.getFromString(colorName: customizationTip.theme)
+        
+        titleLabel.attributedText = newStringStyle(customizationTip.details.subtitle, color: UIColor.appColor(assetColor))
         descriptionLabel.text = customizationTip.details.description
         descriptionImage.image = UIImage(named: customizationTip.details.descriptionImage)
     }

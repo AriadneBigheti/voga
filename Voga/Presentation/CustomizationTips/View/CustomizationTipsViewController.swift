@@ -24,4 +24,13 @@ class CustomizationTipsViewController: UIViewController {
     override func loadView() {
         view = contentView
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupNavigationBar()
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.isNavigationBarHidden = true
+    }
 }

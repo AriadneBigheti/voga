@@ -6,11 +6,11 @@
         "secondaryTheme": "lightPink",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
-            "image": "customization-tips-pink-camiseta-image"
+            "image": "customization-tips-pink-shirt-image"
         },
         "details": {
             "title": "Ideias de como mudar sua camiseta.",
-            "titleImage": "customization-tips-white-camiseta-image",
+            "titleImage": "customization-tips-white-shirt-image",
             "subtitle": "<Uma tesoura> pode mudar tudo.",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci, a feugiat odio nibh fermentum tellus. Nulla tristique fringilla ipsum. ",
             "descriptionImage": "scissor",
@@ -23,7 +23,7 @@
                   "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
               ],
               "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
-              "image": "scissor"
+              "image": "customization-stips-step-illustrative"
             },
                 {
                   "title": "Como fazer um cropped da sua camiseta. ",
@@ -34,7 +34,7 @@
                       "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
                   ],
                   "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
-                  "image": "scissor"
+                  "image": "customization-stips-step-illustrative"
                 },
                 {
                   "title": "Como fazer um cropped da sua camiseta. ",
@@ -45,17 +45,17 @@
                       "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
                   ],
                   "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
-                  "image": "scissor"
+                  "image": "customization-stips-step-illustrative"
                 }]
         }
     }, {
         "customizationTipId": 2,
         "category": "camisetas",
-        "theme": "lightBlue",
-        "secondaryTheme": "lightBlue",
+        "theme": "auxiliaryBlue",
+        "secondaryTheme": "auxiliaryBlue",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
-            "image": "customization-tips-calca-image"
+            "image": "customization-tips-pants-image"
         },
         "details": {
             "title": "Ideias de como mudar sua camiseta.",
@@ -78,8 +78,8 @@
     }, {
         "customizationTipId": 1,
         "category": "camisetas",
-        "theme": "lightPink",
-        "secondaryTheme": "lightPink",
+        "theme": "auxiliaryBlue",
+        "secondaryTheme": "auxiliaryBlue",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
             "image": "customization-tips-pink-camiseta-image"
@@ -105,11 +105,11 @@
     }, {
         "customizationTipId": 2,
         "category": "camisetas",
-        "theme": "lightBlue",
-        "secondaryTheme": "lightBlue",
+        "theme": "auxiliaryBlue",
+        "secondaryTheme": "auxiliaryBlue",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
-            "image": "customization-tips-calca-image"
+            "image": "customization-tips-jacket-image"
         },
         "details": {
             "title": "Ideias de como mudar sua camiseta.",

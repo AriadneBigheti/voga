@@ -14,20 +14,17 @@ class HeaderCollectionView: UICollectionReusableView {
         get { return "headerCollectionView"}
     }
 
-    private lazy var title: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonBold(size: 34).uiFont
-        label.text = "Dicas"
+    private lazy var title: VogaLabel = {
+        let label = VogaLabel(text: "Dicas",font: .AtkinsonBold(size: 34))
 
         return label
     }()
 
-    private lazy var subtitle: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 14).uiFont
-        label.textColor = VogaColors.gray.uiColor
-        label.text = "Saiba como customizar suas peças, aumentando o tempo de vida delas e assim sendo mais sustentável."
-        label.numberOfLines = 0
+    private lazy var subtitle: VogaLabel = {
+        let label = VogaLabel(
+            text: "Saiba como customizar suas peças, aumentando o tempo de vida delas e assim sendo mais sustentável."
+        )
+        label.textColor = .appColor(.darkGrayFont)
 
         return label
     }()
@@ -68,6 +65,6 @@ extension HeaderCollectionView: ViewCodeProtocol {
     }
 
     func additionalSetup() {
-        backgroundColor = VogaColors.backgroundColor.uiColor
+        backgroundColor = .appColor(.background)
     }
 }

@@ -8,10 +8,10 @@
 import UIKit
 
 protocol CustomizationTipsDetailsCoordinatorLogic: AnyObject {
-
+    func dismissViewController()
 }
 
-class CustomizationTipsDetailsCoordinator: PushedCoordinator, CustomizationTipsDetailsCoordinatorLogic {
+class CustomizationTipsDetailsCoordinator: PresentedCoordinator, CustomizationTipsDetailsCoordinatorLogic {
 
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
@@ -25,7 +25,11 @@ class CustomizationTipsDetailsCoordinator: PushedCoordinator, CustomizationTipsD
 
     func loadViewController() -> UIViewController {
         let presenter = CustomizationTipsDetailsPresenter(coordinatorDelegate: self)
-        return CustomizationTipsDetailsViewController(presenter: presenter, customizationTip: customizationTip)
+        let tipsViewController = CustomizationTipsDetailsViewController(presenter: presenter, customizationTip: customizationTip)
+        return tipsViewController
     }
-
+    
+    func dismissViewController() {
+        dismissViewController(animated: true)
+    }
 }
