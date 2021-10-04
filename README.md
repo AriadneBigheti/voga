@@ -40,3 +40,13 @@ Check out customized content about how to personalize your own clothes to reiven
 | ------------------- | ------------------- |
 |  <img src="https://user-images.githubusercontent.com/45802286/135779582-7725f612-71ef-412c-9faf-5b8d4cc096c5.png" width="500"> | <img src="https://user-images.githubusercontent.com/45802286/135779642-5538d5e7-0766-4112-84d6-4918801542a4.png" width="500"> |
 
+## Architecture
+
+This project uses MVP with Coordinator architecture pattern.
+
+## Tools and Practices
+
+View Code using UIKit to create views;
+Firebase/Cloudkit for external database;
+CocoaPods for dependency management;
+Figma to prototype.
