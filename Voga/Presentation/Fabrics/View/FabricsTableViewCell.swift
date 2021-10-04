@@ -41,7 +41,7 @@ class FabricsTableViewCell: UITableViewCell {
     }()
 
     private lazy var disclosureIndicator: UIImageView = {
-        let image = UIImage(named: "disclosure-indicator")?.withTintColor((.appColor(.disclosureIndicator) ?? VogaColors.gray.uiColor))
+        let image = UIImage(named: "disclosure-indicator")?.withTintColor(.appColor(.disclosureIndicator))
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFit
 

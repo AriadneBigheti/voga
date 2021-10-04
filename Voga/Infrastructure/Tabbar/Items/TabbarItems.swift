@@ -17,7 +17,7 @@ enum TabbarItems: Int {
 
     static func createMainScreenTabItem(_ tabbarController: UITabBarController) -> HomeCoordinator {
         let image = UIImage(named: "home-icon")
-        let selectedImage = image?.withTintColor((.appColor(.clickableGreen) ?? VogaColors.clickableGreen.uiColor))
+        let selectedImage = image?.withTintColor(.appColor(.clickableGreen))
         let itemTitle = "Explorar"
         let homeItem = UITabBarItem(title: itemTitle, image: image, selectedImage: selectedImage)
         homeItem.imageInsets = TabbarItems.imageInsets
@@ -30,7 +30,7 @@ enum TabbarItems: Int {
     
     static func createCustomizationTipTabIcon(_ tabbarController: UITabBarController) -> CustomizationTipsCoordinator {
         let image = UIImage(named: "customization-tips-icon")
-        let selectedImage = image?.withTintColor((.appColor(.clickableGreen) ?? VogaColors.clickableGreen.uiColor))
+        let selectedImage = image?.withTintColor(.appColor(.clickableGreen))
         let itemTitle = "Dicas"
         let tipsItem = UITabBarItem(title: itemTitle, image: image, selectedImage: selectedImage)
         tipsItem.imageInsets = TabbarItems.imageInsets
@@ -42,8 +42,8 @@ enum TabbarItems: Int {
     }
     
     static func createFabricsTabItem(_ tabbarController: UITabBarController) -> FabricsCoordinator {
-        let image = UIImage(named: "home-icon")?.withTintColor((.appColor(.iconColor) ?? VogaColors.gray.uiColor))
-        let selectedImage = image?.withTintColor((.appColor(.clickableGreen) ?? VogaColors.clickableGreen.uiColor))
+        let image = UIImage(named: "fabrics-icon")?.withTintColor(.appColor(.iconColor))
+        let selectedImage = image?.withTintColor(.appColor(.clickableGreen))
         let itemTitle = "Tecidos"
         let fabricsItem = UITabBarItem(title: itemTitle, image: image, selectedImage: selectedImage)
         fabricsItem.imageInsets = TabbarItems.imageInsets

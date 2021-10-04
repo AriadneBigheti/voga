@@ -19,29 +19,26 @@ class CustomizationTipsDetailsHeaderTitleView: UIView {
         let imageBackground = UIView()
         imageBackground.layer.cornerRadius = 200
         imageBackground.layer.masksToBounds = true
-        imageBackground.backgroundColor = VogaColors.whiteOppacity.uiColor
+        imageBackground.backgroundColor = .white.withAlphaComponent(0.2)
 
         return imageBackground
      }()
 
     private lazy var image: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
 
         return image
     }()
 
-    private lazy var title: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 16).uiFont
-        label.textColor = VogaColors.lightGray.uiColor
+    private lazy var title: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonRegular(size: 16))
 
         return label
     }()
 
-    private lazy var subtitle: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonBold(size: 30).uiFont
-        label.numberOfLines = 0
+    private lazy var subtitle: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonBold(size: 30))
 
         return label
     }()
@@ -50,7 +47,8 @@ class CustomizationTipsDetailsHeaderTitleView: UIView {
         title.text = customizationTip.category.uppercased()
         subtitle.text = customizationTip.details.title
         image.image = UIImage(named: customizationTip.details.titleImage)
-        containerView.backgroundColor = VogaColors.getFromString(colorName: customizationTip.secondaryTheme).uiColor
+        let assetColor = AssetsColor.getFromString(colorName: customizationTip.secondaryTheme)
+        containerView.backgroundColor = .appColor(assetColor)
     }
 
     override init(frame: CGRect) {

@@ -8,6 +8,7 @@
 enum AssetsColor: String {
     case backgroundPink
     case backgroundWhite
+    case lightPink
     case darkPink
     case clickableGreen
     case gray
@@ -16,9 +17,19 @@ enum AssetsColor: String {
     case titleDarkPink
     case background
     case auxiliaryGreen
+    case auxiliaryBlue
     case iconColor
     case sustainableIndicator
     case moderateSustainableIndicator
     case unsustainableIndicator
     case disclosureIndicator
+    case darkGrayFont
+    
+    static func getFromString(colorName color: String) -> AssetsColor {
+        if let color = AssetsColor(rawValue: color) {
+            return color
+        }
+
+        return .black
+    }
 }

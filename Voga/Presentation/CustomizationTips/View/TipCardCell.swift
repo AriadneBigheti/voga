@@ -11,37 +11,28 @@ class TipCardCell: UICollectionViewCell {
 
     private lazy var containerView: UIView = {
         let containerView = UIView()
-        containerView.backgroundColor = .white
+        containerView.backgroundColor = .appColor(.backgroundWhite)
         containerView.layer.cornerRadius = 40
 
         return containerView
      }()
 
-    private lazy var imageBackground: UIView = {
-        let imageBackground = UIView()
-        imageBackground.layer.cornerRadius = 85
-        imageBackground.layer.masksToBounds = true
-
-        return imageBackground
-     }()
-
     private lazy var image: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
 
         return image
     }()
 
-    private lazy var title: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonBold(size: 28).uiFont
+    private lazy var title: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonBold(size: 28))
 
         return label
     }()
 
-    private lazy var subtitle: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 17).uiFont
-        label.textColor = VogaColors.gray.uiColor
+    private lazy var subtitle: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonRegular(size: 17))
+        label.textColor = .appColor(.darkGrayFont)
         label.numberOfLines = 0
 
         return label
@@ -51,7 +42,6 @@ class TipCardCell: UICollectionViewCell {
         title.text = customizationTip.category.capitalized
         subtitle.text = customizationTip.card.title
         image.image = UIImage(named: customizationTip.card.image)
-        imageBackground.backgroundColor = VogaColors.getFromString(colorName: customizationTip.secondaryTheme).uiColor
     }
 
     override init(frame: CGRect) {
@@ -67,7 +57,6 @@ class TipCardCell: UICollectionViewCell {
 extension TipCardCell: ViewCodeProtocol {
     func setupHierarchy() {
         addSubview(containerView)
-        containerView.addSubview(imageBackground)
         containerView.addSubview(image)
         containerView.addSubview(title)
         containerView.addSubview(subtitle)
@@ -79,18 +68,11 @@ extension TipCardCell: ViewCodeProtocol {
               view.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16)]
          }
 
-        imageBackground.constraint { view in
-            [view.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-             view.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
-             view.widthAnchor.constraint(equalToConstant: 170),
-             view.heightAnchor.constraint(equalToConstant: 170)]
-        }
-
         image.constraint { view in
             [view.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-             view.topAnchor.constraint(equalTo: imageBackground.topAnchor),
-             view.widthAnchor.constraint(equalToConstant: 160),
-             view.heightAnchor.constraint(equalToConstant: 204)]
+             view.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 20),
+             view.widthAnchor.constraint(equalToConstant: 240),
+             view.heightAnchor.constraint(equalToConstant: 230)]
         }
 
         title.constraint { view in
@@ -107,6 +89,6 @@ extension TipCardCell: ViewCodeProtocol {
     }
 
     func additionalSetup() {
-        backgroundColor = VogaColors.backgroundColor.uiColor
+        backgroundColor = .appColor(.background)
     }
 }

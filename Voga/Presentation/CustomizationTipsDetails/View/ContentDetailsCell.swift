@@ -14,31 +14,25 @@ class ContentDetailsCell: UITableViewCell {
 
     private lazy var containerView: UIView = {
         let containerView = UIView()
-        containerView.backgroundColor = .white
+        containerView.backgroundColor = .appColor(.backgroundWhite)
 
         return containerView
     }()
 
-    private lazy var title: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonBold(size: 24).uiFont
-        label.numberOfLines = 0
+    private lazy var title: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonBold(size: 24))
 
         return label
     }()
 
     private lazy var subtitle: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 17).uiFont
-        label.numberOfLines = 0
+        let label = VogaLabel(font: .AtkinsonRegular(size: 17))
 
         return label
     }()
 
-    private lazy var cloujureLabel: UILabel = {
-        let label = UILabel()
-        label.font = VogaFonts.AtkinsonRegular(size: 17).uiFont
-        label.numberOfLines = 0
+    private lazy var cloujureLabel: VogaLabel = {
+        let label = VogaLabel(font: .AtkinsonRegular(size: 17))
 
         return label
     }()
@@ -63,7 +57,7 @@ class ContentDetailsCell: UITableViewCell {
         subtitle.text = tip.description
         image.image = UIImage(named: tip.image)
         cloujureLabel.text = tip.cloujure
-        containerView.backgroundColor = isBackgroundGray ? VogaColors.backgroundColor.uiColor : .white
+        containerView.backgroundColor = isBackgroundGray ? .appColor(.background) : .appColor(.backgroundWhite)
         setupStackView(with: tip.steps)
     }
 
