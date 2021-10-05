@@ -58,7 +58,7 @@
 		59D8E212270A097D009FD206 /* CustomizationTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E211270A097D009FD206 /* CustomizationTip.swift */; };
 		59D8E214270A09AC009FD206 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E213270A09AC009FD206 /* Details.swift */; };
 		59D8E216270A09C5009FD206 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E215270A09C5009FD206 /* Tip.swift */; };
-		59D8E218270A09DF009FD206 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E217270A09DF009FD206 /* ModelData.swift */; };
+		59D8E218270A09DF009FD206 /* CustomizationTipModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E217270A09DF009FD206 /* CustomizationTipModelData.swift */; };
 		59D8E21A270A0A71009FD206 /* VogaFontsAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E219270A0A71009FD206 /* VogaFontsAttributes.swift */; };
 		59D8E224270A0BD2009FD206 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E223270A0BD2009FD206 /* StringUtils.swift */; };
 		59D8E226270A0BFB009FD206 /* CustomizationTipsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E225270A0BFB009FD206 /* CustomizationTipsCoordinator.swift */; };
@@ -80,7 +80,6 @@
 		59D8E24B270A1002009FD206 /* customizationTipsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 59D8E24A270A1002009FD206 /* customizationTipsJSON.json */; };
 		59D8E251270A7707009FD206 /* FabricsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E250270A7707009FD206 /* FabricsCoordinator.swift */; };
 		59D8E254270A77F6009FD206 /* SustainabilityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E253270A77F6009FD206 /* SustainabilityType.swift */; };
-		59D8E257270A780E009FD206 /* Fabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E256270A780E009FD206 /* Fabric.swift */; };
 		59D8E259270A782F009FD206 /* FabricsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E258270A782F009FD206 /* FabricsPresenter.swift */; };
 		59D8E25B270A7853009FD206 /* FabricsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E25A270A7853009FD206 /* FabricsTableViewCell.swift */; };
 		59D8E25D270A787F009FD206 /* FabricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E25C270A787F009FD206 /* FabricsView.swift */; };
@@ -89,6 +88,11 @@
 		59D8E267270C8427009FD206 /* FabricsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E266270C8427009FD206 /* FabricsDetailsPresenter.swift */; };
 		59D8E269270C8487009FD206 /* FabricsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E268270C8487009FD206 /* FabricsDetailsViewController.swift */; };
 		59D8E26B270C8555009FD206 /* FabricsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */; };
+		BCB285AA270C7A9500FDBBC9 /* fabricsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BCB285A9270C7A9500FDBBC9 /* fabricsJSON.json */; };
+		BCB285AD270C7D6000FDBBC9 /* Fabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB285AC270C7D6000FDBBC9 /* Fabric.swift */; };
+		BCB285AF270C7E4100FDBBC9 /* EnvironmentalImpacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB285AE270C7E4100FDBBC9 /* EnvironmentalImpacts.swift */; };
+		BCB285B1270C7EE000FDBBC9 /* FabricModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB285B0270C7EE000FDBBC9 /* FabricModelData.swift */; };
+		BCB285B3270C805400FDBBC9 /* InformationImpact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB285B2270C805400FDBBC9 /* InformationImpact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,7 +170,7 @@
 		59D8E211270A097D009FD206 /* CustomizationTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationTip.swift; sourceTree = "<group>"; };
 		59D8E213270A09AC009FD206 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		59D8E215270A09C5009FD206 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
-		59D8E217270A09DF009FD206 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		59D8E217270A09DF009FD206 /* CustomizationTipModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationTipModelData.swift; sourceTree = "<group>"; };
 		59D8E219270A0A71009FD206 /* VogaFontsAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VogaFontsAttributes.swift; sourceTree = "<group>"; };
 		59D8E223270A0BD2009FD206 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		59D8E225270A0BFB009FD206 /* CustomizationTipsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationTipsCoordinator.swift; sourceTree = "<group>"; };
@@ -188,7 +192,6 @@
 		59D8E24A270A1002009FD206 /* customizationTipsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = customizationTipsJSON.json; sourceTree = "<group>"; };
 		59D8E250270A7707009FD206 /* FabricsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsCoordinator.swift; sourceTree = "<group>"; };
 		59D8E253270A77F6009FD206 /* SustainabilityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SustainabilityType.swift; sourceTree = "<group>"; };
-		59D8E256270A780E009FD206 /* Fabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fabric.swift; sourceTree = "<group>"; };
 		59D8E258270A782F009FD206 /* FabricsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsPresenter.swift; sourceTree = "<group>"; };
 		59D8E25A270A7853009FD206 /* FabricsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsTableViewCell.swift; sourceTree = "<group>"; };
 		59D8E25C270A787F009FD206 /* FabricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsView.swift; sourceTree = "<group>"; };
@@ -197,6 +200,11 @@
 		59D8E266270C8427009FD206 /* FabricsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsPresenter.swift; sourceTree = "<group>"; };
 		59D8E268270C8487009FD206 /* FabricsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsViewController.swift; sourceTree = "<group>"; };
 		59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsView.swift; sourceTree = "<group>"; };
+		BCB285A9270C7A9500FDBBC9 /* fabricsJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fabricsJSON.json; sourceTree = "<group>"; };
+		BCB285AC270C7D6000FDBBC9 /* Fabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fabric.swift; sourceTree = "<group>"; };
+		BCB285AE270C7E4100FDBBC9 /* EnvironmentalImpacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalImpacts.swift; sourceTree = "<group>"; };
+		BCB285B0270C7EE000FDBBC9 /* FabricModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricModelData.swift; sourceTree = "<group>"; };
+		BCB285B2270C805400FDBBC9 /* InformationImpact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationImpact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +406,7 @@
 			children = (
 				5954B81E26E27D8C00E468C8 /* Assets.xcassets */,
 				59D8E24A270A1002009FD206 /* customizationTipsJSON.json */,
+				BCB285A9270C7A9500FDBBC9 /* fabricsJSON.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -574,6 +583,7 @@
 		59D8E20D270A091E009FD206 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCB285AB270C7D4500FDBBC9 /* Fabrics */,
 				59D8E20E270A0922009FD206 /* CustomizationTips */,
 			);
 			path = Models;
@@ -586,7 +596,7 @@
 				59D8E211270A097D009FD206 /* CustomizationTip.swift */,
 				59D8E213270A09AC009FD206 /* Details.swift */,
 				59D8E215270A09C5009FD206 /* Tip.swift */,
-				59D8E217270A09DF009FD206 /* ModelData.swift */,
+				59D8E217270A09DF009FD206 /* CustomizationTipModelData.swift */,
 			);
 			path = CustomizationTips;
 			sourceTree = "<group>";
@@ -696,8 +706,6 @@
 		59D8E24C270A76EB009FD206 /* Fabrics */ = {
 			isa = PBXGroup;
 			children = (
-				59D8E255270A7806009FD206 /* Model */,
-				59D8E252270A77EC009FD206 /* Enum */,
 				59D8E24F270A76FC009FD206 /* View */,
 				59D8E24E270A76F7009FD206 /* Coordinator */,
 				59D8E24D270A76F1009FD206 /* Presenter */,
@@ -739,10 +747,21 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		59D8E255270A7806009FD206 /* Model */ = {
+		BCB285A3270C749E00FDBBC9 /* FabricsDetails */ = {
 			isa = PBXGroup;
 			children = (
-				59D8E256270A780E009FD206 /* Fabric.swift */,
+				BCB285A8270C74E200FDBBC9 /* Presenter */,
+				BCB285A7270C74D700FDBBC9 /* Coordinator */,
+				BCB285A6270C74CD00FDBBC9 /* View */,
+				BCB285A5270C74C400FDBBC9 /* Enum */,
+				BCB285A4270C74BB00FDBBC9 /* Model */,
+			);
+			path = FabricsDetails;
+			sourceTree = "<group>";
+		};
+		BCB285A4270C74BB00FDBBC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -780,6 +799,18 @@
 				59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BCB285AB270C7D4500FDBBC9 /* Fabrics */ = {
+			isa = PBXGroup;
+			children = (
+				59D8E252270A77EC009FD206 /* Enum */,
+				BCB285AC270C7D6000FDBBC9 /* Fabric.swift */,
+				BCB285AE270C7E4100FDBBC9 /* EnvironmentalImpacts.swift */,
+				BCB285B0270C7EE000FDBBC9 /* FabricModelData.swift */,
+				BCB285B2270C805400FDBBC9 /* InformationImpact.swift */,
+			);
+			path = Fabrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -892,6 +923,7 @@
 				5954B88626EE939800E468C8 /* Atkinson-Hyperlegible-BoldItalic-102.otf in Resources */,
 				5954B88826EE939800E468C8 /* Atkinson-Hyperlegible-Regular-102.otf in Resources */,
 				5954B88526EE939800E468C8 /* Atkinson-Hyperlegible-Bold-102.otf in Resources */,
+				BCB285AA270C7A9500FDBBC9 /* fabricsJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,17 +979,18 @@
 				5954B88E26EE973000E468C8 /* VogaFonts.swift in Sources */,
 				59D8E23B270A0E18009FD206 /* CustomizationTipsDetailsPresenter.swift in Sources */,
 				5954B8D926F0E03100E468C8 /* QuizCollectionViewCell.swift in Sources */,
+				BCB285B1270C7EE000FDBBC9 /* FabricModelData.swift in Sources */,
 				59D8E243270A0EB7009FD206 /* CustomizationTipsDetailsHeaderView.swift in Sources */,
 				5954B8ED2700C67B00E468C8 /* QuizzesTableViewCell.swift in Sources */,
 				5954B81D26E27D7F00E468C8 /* Voga.xcdatamodeld in Sources */,
 				5954B8A726EF6D9A00E468C8 /* Coordinator.swift in Sources */,
 				59D8E249270A0F58009FD206 /* StepView.swift in Sources */,
-				59D8E257270A780E009FD206 /* Fabric.swift in Sources */,
 				59D8E247270A0F29009FD206 /* CustomizationTipsDetailsViewController.swift in Sources */,
 				59D8E22E270A0CCC009FD206 /* HeaderCollectionView.swift in Sources */,
 				5954B8AF26EF6EAE00E468C8 /* InTabBarCoordinator.swift in Sources */,
 				5954B8A926EF6DCA00E468C8 /* ShowedCoordinator.swift in Sources */,
-				59D8E218270A09DF009FD206 /* ModelData.swift in Sources */,
+				59D8E218270A09DF009FD206 /* CustomizationTipModelData.swift in Sources */,
+				BCB285B3270C805400FDBBC9 /* InformationImpact.swift in Sources */,
 				59D8E25B270A7853009FD206 /* FabricsTableViewCell.swift in Sources */,
 				5954B89126EE9C5300E468C8 /* ViewCodeProtocol.swift in Sources */,
 				5954B8CD26EF7FA500E468C8 /* QuizView.swift in Sources */,
@@ -970,6 +1003,7 @@
 				5954B84926E2802800E468C8 /* UIView+Extension.swift in Sources */,
 				5954B8BA26EF715F00E468C8 /* HomeCoordinator.swift in Sources */,
 				5954B8BF26EF731500E468C8 /* HomeViewController.swift in Sources */,
+				BCB285AD270C7D6000FDBBC9 /* Fabric.swift in Sources */,
 				59D8E224270A0BD2009FD206 /* StringUtils.swift in Sources */,
 				5954B81526E27D7F00E468C8 /* SceneDelegate.swift in Sources */,
 				5954B8B226EF6F0900E468C8 /* TabbarController.swift in Sources */,
@@ -978,6 +1012,7 @@
 				59D8E267270C8427009FD206 /* FabricsDetailsPresenter.swift in Sources */,
 				59D8E210270A0932009FD206 /* Card.swift in Sources */,
 				59D8E22A270A0C70009FD206 /* CustomizationTipsView.swift in Sources */,
+				BCB285AF270C7E4100FDBBC9 /* EnvironmentalImpacts.swift in Sources */,
 				5954B8C926EF7F3000E468C8 /* QuizPresenter.swift in Sources */,
 				5954B8F02700CA7800E468C8 /* Quiz.swift in Sources */,
 				59D8E216270A09C5009FD206 /* Tip.swift in Sources */,

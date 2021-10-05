@@ -49,8 +49,8 @@ class FabricsTableViewCell: UITableViewCell {
     }()
 
     func configure(with model: Fabric) {
-        fabricName.text = model.material
-        switch model.sustainabilityType {
+        fabricName.text = model.title
+        switch model.environmentalImpacts.severityType {
         case .sustainable:
             sustainabilityIndicatorView.backgroundColor = .appColor(.sustainableIndicator)
         case .fairlySustainable:

@@ -29,24 +29,11 @@ class FabricsPresenter: FabricsPresentationLogic {
     }
 
     func search(text: String) {
-        let fabrics = text == "" ?  retrieveFabrics() : retrieveFabrics().filter { $0.material.uppercased().contains(text.uppercased()) }
+        let fabrics = text == "" ?  retrieveFabrics() : retrieveFabrics().filter { $0.title.uppercased().contains(text.uppercased()) }
         viewDelegate?.updateView(with: fabrics)
     }
 
     func retrieveFabrics() -> [Fabric] {
-        return [
-            .init(
-                material: "Algodão",
-                sustainabilityType: .sustainable
-            ),
-            .init(
-                material: "Couro",
-                sustainabilityType: .unsustainable
-            ),
-            .init(
-                material: "Poliéster",
-                sustainabilityType: .unsustainable
-            )
-        ]
+        return fabrics
     }
 }

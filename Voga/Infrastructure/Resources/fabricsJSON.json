@@ -1,0 +1,28 @@
+[
+    {
+        "fabricId": 1,
+        "title": "Couro",
+        "subtitle": "Fibra natural animal",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Mauris cursus nunc non ligula fermentum viverra. Sed non dapibus mi, nec aliqu massa. Sed placerat tortor felis, ut iaculis quam condimentum non. Integer nunc risu, suscipit ut ante sit amet, feugiat commodo tortor. Duis sem orci, tincidunt sed mi ut, ultrices gravida leo. Suspendisse in molestie lectus.",
+        "environmentalImpacts": {
+            "severity": "unsustainable",
+            "waterImpacts": {
+                "severity": "unsustainable",
+                "description": "<15 mil> litros de água por quilo produzido"
+            },
+            "feedstockImpacts": {
+                "severity": "unsustainable",
+                "description": "<10 %> do animal é usado para produção"
+            },
+            "decompositionTime": {
+                "severity": "fairlySustainable",
+                "description": "<50 anos>"
+            },
+            "anotherImpacts": "Lorem ipsum dolor sit amet, consectetur adipis cing elit. Mauris cursus nunc non ligula fermentum viverra. Sed non dapibus mi, nec aliqu massa.",
+        },
+        "alternatives": [
+            "Couro vegano",
+            "Couro reciclado"
+        ]
+    }
+]
