@@ -77,7 +77,7 @@ extension FabricsView: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.showFabricsDetails()
+        presenter?.showFabricsDetails(fabric: fabrics[indexPath.row])
     }
 }
 

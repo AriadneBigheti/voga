@@ -8,7 +8,7 @@
 import UIKit
 
 protocol FabricsCoordinatorLogic: AnyObject {
-    func showFabricsDetails()
+    func showFabricsDetails(fabric: Fabric)
 }
 
 class FabricsCoordinator: InTabBarCoordinator {
@@ -31,8 +31,8 @@ class FabricsCoordinator: InTabBarCoordinator {
 }
 
 extension FabricsCoordinator: FabricsCoordinatorLogic {
-    func showFabricsDetails() {
-        let coordinator = FabricsDetailsCoordinator(presentingViewController: presentingViewController ?? UINavigationController())
+    func showFabricsDetails(fabric: Fabric) {
+        let coordinator = FabricsDetailsCoordinator(presentingViewController: presentingViewController ?? UINavigationController(), fabric: fabric)
         coordinator.start()
         self.nextCoordinator = coordinator
     }

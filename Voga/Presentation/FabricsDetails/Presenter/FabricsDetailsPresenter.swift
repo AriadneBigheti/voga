@@ -7,13 +7,15 @@
 
 
 protocol FabricsDetailsPresentationLogic: AnyObject {
-
+    var fabric: Fabric { get }
 }
 
 class FabricsDetailsPresenter: FabricsDetailsPresentationLogic {
     private weak var coordinator: FabricsDetailsCoordinatorLogic?
+    var fabric: Fabric
 
-    init(coordinatorDelegate: FabricsDetailsCoordinatorLogic) {
+    init(coordinatorDelegate: FabricsDetailsCoordinatorLogic, fabric: Fabric) {
+        self.fabric = fabric
         self.coordinator = coordinatorDelegate
     }
 }

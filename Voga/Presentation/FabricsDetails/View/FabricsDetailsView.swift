@@ -9,10 +9,11 @@ import UIKit
 
 class FabricsDetailsView: UIView {
     private weak var presenter: FabricsDetailsPresentationLogic?
-    private var fabrics: [Fabric] = []
+    private var fabric: Fabric
 
     init(presenter: FabricsDetailsPresentationLogic) {
         self.presenter = presenter
+        self.fabric = presenter.fabric
         super.init(frame: .zero)
         buildView()
     }

@@ -15,13 +15,15 @@ class FabricsDetailsCoordinator: PushedCoordinator {
     var presentingViewController: UINavigationController
     var currentViewController: UIViewController?
     var nextCoordinator: Coordinator?
+    var fabric: Fabric
     
-    init(presentingViewController: UINavigationController) {
+    init(presentingViewController: UINavigationController, fabric: Fabric) {
         self.presentingViewController = presentingViewController
+        self.fabric = fabric
     }
 
     func loadViewController() -> UIViewController {
-        let presenter = FabricsDetailsPresenter(coordinatorDelegate: self)
+        let presenter = FabricsDetailsPresenter(coordinatorDelegate: self, fabric: fabric)
         return FabricsDetailsViewController(presenter: presenter)
     }
 }
