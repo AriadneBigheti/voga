@@ -75,6 +75,10 @@ extension FabricsView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Confira os impactos ambientais de cada tecido."
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter?.showFabricsDetails()
+    }
 }
 
 extension FabricsView: FabricsViewDelegate {

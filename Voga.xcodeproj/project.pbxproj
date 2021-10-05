@@ -85,6 +85,10 @@
 		59D8E25B270A7853009FD206 /* FabricsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E25A270A7853009FD206 /* FabricsTableViewCell.swift */; };
 		59D8E25D270A787F009FD206 /* FabricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E25C270A787F009FD206 /* FabricsView.swift */; };
 		59D8E25F270A78ED009FD206 /* FabricsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E25E270A78ED009FD206 /* FabricsViewController.swift */; };
+		59D8E265270C8239009FD206 /* FabricsDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E264270C8239009FD206 /* FabricsDetailsCoordinator.swift */; };
+		59D8E267270C8427009FD206 /* FabricsDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E266270C8427009FD206 /* FabricsDetailsPresenter.swift */; };
+		59D8E269270C8487009FD206 /* FabricsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E268270C8487009FD206 /* FabricsDetailsViewController.swift */; };
+		59D8E26B270C8555009FD206 /* FabricsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +193,10 @@
 		59D8E25A270A7853009FD206 /* FabricsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsTableViewCell.swift; sourceTree = "<group>"; };
 		59D8E25C270A787F009FD206 /* FabricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsView.swift; sourceTree = "<group>"; };
 		59D8E25E270A78ED009FD206 /* FabricsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsViewController.swift; sourceTree = "<group>"; };
+		59D8E264270C8239009FD206 /* FabricsDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsCoordinator.swift; sourceTree = "<group>"; };
+		59D8E266270C8427009FD206 /* FabricsDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsPresenter.swift; sourceTree = "<group>"; };
+		59D8E268270C8487009FD206 /* FabricsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsViewController.swift; sourceTree = "<group>"; };
+		59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricsDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +317,7 @@
 		5954B87A26EE90E700E468C8 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				59D8E260270C8216009FD206 /* FabricsDetails */,
 				59D8E24C270A76EB009FD206 /* Fabrics */,
 				59D8E231270A0D82009FD206 /* CustomizationTipsDetails */,
 				59D8E21B270A0AE4009FD206 /* CustomizationTips */,
@@ -738,6 +747,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		59D8E260270C8216009FD206 /* FabricsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				59D8E263270C822D009FD206 /* View */,
+				59D8E262270C8226009FD206 /* Presenter */,
+				59D8E261270C8221009FD206 /* Coordinator */,
+			);
+			path = FabricsDetails;
+			sourceTree = "<group>";
+		};
+		59D8E261270C8221009FD206 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59D8E264270C8239009FD206 /* FabricsDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		59D8E262270C8226009FD206 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				59D8E266270C8427009FD206 /* FabricsDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		59D8E263270C822D009FD206 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59D8E268270C8487009FD206 /* FabricsDetailsViewController.swift */,
+				59D8E26A270C8555009FD206 /* FabricsDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -879,6 +923,7 @@
 				5954B8B526EF6F3400E468C8 /* TabbarItems.swift in Sources */,
 				5954B8D726F0D52100E468C8 /* Question.swift in Sources */,
 				5954B8DB26F36FB900E468C8 /* QuizCollectionViewCelllViewModel.swift in Sources */,
+				59D8E265270C8239009FD206 /* FabricsDetailsCoordinator.swift in Sources */,
 				59D8E23D270A0E3B009FD206 /* ContentDetailsCell.swift in Sources */,
 				59D8E251270A7707009FD206 /* FabricsCoordinator.swift in Sources */,
 				59D8E214270A09AC009FD206 /* Details.swift in Sources */,
@@ -891,6 +936,7 @@
 				5954B8B726EF70DA00E468C8 /* TabbarCoordinator.swift in Sources */,
 				5954B8E426FCA00C00E468C8 /* QuizFeedBackCardViewModel.swift in Sources */,
 				5954B84B26E2806600E468C8 /* UIColor+Extensions.swift in Sources */,
+				59D8E269270C8487009FD206 /* FabricsDetailsViewController.swift in Sources */,
 				59D8E22C270A0C8D009FD206 /* CustomizationTipsViewController.swift in Sources */,
 				59D8E239270A0DF1009FD206 /* Step.swift in Sources */,
 				5954B8EA26FF668400E468C8 /* PresentedCoordinator.swift in Sources */,
@@ -929,6 +975,7 @@
 				5954B8B226EF6F0900E468C8 /* TabbarController.swift in Sources */,
 				5954B8C726EF7EA600E468C8 /* QuizCoordinator.swift in Sources */,
 				5954B8C126EF73A300E468C8 /* HomePresenter.swift in Sources */,
+				59D8E267270C8427009FD206 /* FabricsDetailsPresenter.swift in Sources */,
 				59D8E210270A0932009FD206 /* Card.swift in Sources */,
 				59D8E22A270A0C70009FD206 /* CustomizationTipsView.swift in Sources */,
 				5954B8C926EF7F3000E468C8 /* QuizPresenter.swift in Sources */,
@@ -941,6 +988,7 @@
 				59D8E230270A0CF1009FD206 /* TipCardCell.swift in Sources */,
 				59D8E21A270A0A71009FD206 /* VogaFontsAttributes.swift in Sources */,
 				5954B8E026F82C3D00E468C8 /* LabelSpacingOrientation.swift in Sources */,
+				59D8E26B270C8555009FD206 /* FabricsDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

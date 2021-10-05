@@ -8,6 +8,7 @@
 protocol FabricsPresentationLogic: AnyObject {
     func loadData()
     func search(text: String)
+    func showFabricsDetails()
     var viewDelegate: FabricsViewDelegate? { get set }
 }
 
@@ -17,6 +18,10 @@ class FabricsPresenter: FabricsPresentationLogic {
 
     init(coordinatorDelegate: FabricsCoordinatorLogic) {
         self.coordinator = coordinatorDelegate
+    }
+    
+    func showFabricsDetails() {
+        coordinator?.showFabricsDetails()
     }
 
     func loadData() {
