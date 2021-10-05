@@ -21,7 +21,6 @@ class StepView: UIView {
 
     private lazy var numberOfStep: VogaLabel = {
         let vogaLabel = VogaLabel(font: .AtkinsonItalicBold(size: 50))
-        vogaLabel.textColor = .appColor(.darkPink)
 
         return vogaLabel
     }()
@@ -32,9 +31,11 @@ class StepView: UIView {
         return vogaLabel
     }()
 
-    func configure(with model: Step) {
+    func configure(with model: Step, color: AssetsColor) {
         numberOfStep.text = "\(model.numberOfSteps)."
         descriptionStep.text = model.descriptionSteps
+
+        numberOfStep.textColor = .appColor(color)
     }
 }
 extension StepView: ViewCodeProtocol {

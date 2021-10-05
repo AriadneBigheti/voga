@@ -11,7 +11,8 @@ struct Tip: Hashable, Decodable, Identifiable {
     var id: UUID {
         UUID()
     }
-
+    
+    var theme: String = "darkPink"
     var title: String = "Como fazer um cropped da sua camiseta."
     var description: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:"
     var steps: [String] = [

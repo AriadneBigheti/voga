@@ -11,6 +11,8 @@ import UIKit
 class ContentDetailsCell: UITableViewCell {
 
     var didRenderSteps: Bool = false
+    
+    var tip: Tip = Tip()
 
     private lazy var containerView: UIView = {
         let containerView = UIView()
@@ -53,6 +55,7 @@ class ContentDetailsCell: UITableViewCell {
     }()
 
     func configure(with tip: Tip, isBackgroundGray: Bool) {
+        self.tip = tip
         title.text = tip.title
         subtitle.text = tip.description
         image.image = UIImage(named: tip.image)
@@ -88,7 +91,7 @@ extension ContentDetailsCell: ViewCodeProtocol {
 
         for i in 0...steps.count-1 {
             let stepView = StepView()
-            stepView.configure(with: .init(numberOfSteps: i+1, descriptionSteps: steps[i]))
+            stepView.configure(with: .init(numberOfSteps: i+1, descriptionSteps: steps[i]), color: AssetsColor.getFromString(colorName: tip.theme))
             stepView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
             stepStackView.addArrangedSubview(stepView)
         }

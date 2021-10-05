@@ -2,7 +2,7 @@
     {
         "customizationTipId": 1,
         "category": "camisetas",
-        "theme": "lightPink",
+        "theme": "darkPink",
         "secondaryTheme": "lightPink",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
@@ -15,6 +15,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci, a feugiat odio nibh fermentum tellus. Nulla tristique fringilla ipsum. ",
             "descriptionImage": "scissor",
             "tips": [{
+              "theme": "darkPink",
               "title": "Como fazer um cropped da sua camiseta. ",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
               "steps": [
@@ -25,28 +26,30 @@
               "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
               "image": "customization-stips-step-illustrative"
             },
-                {
-                  "title": "Como fazer um cropped da sua camiseta. ",
-                  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
-                  "steps": [
-                      "Vista a camiseta e marque com a ajuda de um giz a altura que você quer que ela fique.",
-                      "Tire a camiseta do seu corpo e usando uma régua, trace uma reta na altura que tinha marcado.",
-                      "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
-                  ],
-                  "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
-                  "image": "customization-stips-step-illustrative"
-                },
-                {
-                  "title": "Como fazer um cropped da sua camiseta. ",
-                  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
-                  "steps": [
-                      "Vista a camiseta e marque com a ajuda de um giz a altura que você quer que ela fique.",
-                      "Tire a camiseta do seu corpo e usando uma régua, trace uma reta na altura que tinha marcado.",
-                      "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
-                  ],
-                  "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
-                  "image": "customization-stips-step-illustrative"
-                }]
+            {
+              "theme": "darkPink",
+              "title": "Como fazer um cropped da sua camiseta. ",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
+              "steps": [
+                  "Vista a camiseta e marque com a ajuda de um giz a altura que você quer que ela fique.",
+                  "Tire a camiseta do seu corpo e usando uma régua, trace uma reta na altura que tinha marcado.",
+                  "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
+              ],
+              "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
+              "image": "customization-stips-step-illustrative"
+            },
+            {
+              "theme": "darkPink",
+              "title": "Como fazer um cropped da sua camiseta. ",
+              "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
+              "steps": [
+                  "Vista a camiseta e marque com a ajuda de um giz a altura que você quer que ela fique.",
+                  "Tire a camiseta do seu corpo e usando uma régua, trace uma reta na altura que tinha marcado.",
+                  "Agora pegue uma boa tesoura e corte a camiseta na reta que você traçou.",
+              ],
+              "cloujure": "E seu novo cropped está pronto, é só vestir e sair usando!",
+              "image": "customization-stips-step-illustrative"
+            }]
         }
     }, {
         "customizationTipId": 2,
@@ -64,6 +67,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci, a feugiat odio nibh fermentum tellus. Nulla tristique fringilla ipsum. ",
             "descriptionImage": "scissor",
             "tips": [{
+              "theme": "auxiliaryBlue",
               "title": "Como fazer um cropped da sua camiseta. ",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
               "steps": [
@@ -91,6 +95,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci, a feugiat odio nibh fermentum tellus. Nulla tristique fringilla ipsum. ",
             "descriptionImage": "<link>",
             "tips": [{
+              "theme": "auxiliaryBlue",
               "title": "Como fazer um cropped da sua camiseta. ",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
               "steps": [
@@ -118,6 +123,7 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci, a feugiat odio nibh fermentum tellus. Nulla tristique fringilla ipsum. ",
             "descriptionImage": "<link>",
             "tips": [{
+              "theme": "auxiliaryBlue",
               "title": "Como fazer um cropped da sua camiseta. ",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
               "steps": [
