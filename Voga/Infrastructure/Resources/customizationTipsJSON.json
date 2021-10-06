@@ -2,7 +2,7 @@
     {
         "customizationTipId": 1,
         "category": "camisetas",
-        "theme": "darkPink",
+        "theme": "lightPink",
         "secondaryTheme": "lightPink",
         "card": {
             "title": "Aenean vulputate, arcu quis accumsan faucibus, orci quam rhoncus orci.",
@@ -39,7 +39,7 @@
               "image": "customization-stips-step-illustrative"
             },
             {
-              "theme": "darkPink",
+              "theme": "lightPink",
               "title": "Como fazer um cropped da sua camiseta. ",
               "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Siga os seguintes passos:",
               "steps": [
