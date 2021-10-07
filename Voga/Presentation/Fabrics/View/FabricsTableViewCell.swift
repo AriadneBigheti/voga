@@ -21,6 +21,7 @@ class FabricsTableViewCell: UITableViewCell {
     private lazy var containerView: UIView = {
         let view = UIView()
         view.backgroundColor = .appColor(.backgroundWhite)
+        view.isAccessibilityElement = true
 
         return view
     }()
@@ -53,10 +54,13 @@ class FabricsTableViewCell: UITableViewCell {
         switch model.sustainabilityType {
         case .sustainable:
             sustainabilityIndicatorView.backgroundColor = .appColor(.sustainableIndicator)
+            containerView.accessibilityLabel = "\(fabricName.text!), Tecido de baixo impacto. Botão"
         case .fairlySustainable:
             sustainabilityIndicatorView.backgroundColor = .yellow
+            containerView.accessibilityLabel = "\(fabricName.text!), Tecido de médio impacto. Botão"
         case .unsustainable:
             sustainabilityIndicatorView.backgroundColor = .appColor(.unsustainableIndicator)
+            containerView.accessibilityLabel = "\(fabricName.text!), Tecido de alto impacto. Botão"
 
         }
     }

@@ -43,6 +43,7 @@ class FabricsViewController: UIViewController {
         search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Buscar"
+        search.isAccessibilityElement = true
 
         return search
     }

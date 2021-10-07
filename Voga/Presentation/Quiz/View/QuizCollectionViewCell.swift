@@ -52,6 +52,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = .appColor(.black)
+        label.isAccessibilityElement = true
         
         return label
     }()
@@ -61,6 +62,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
         label.font = VogaFonts.AtkinsonRegular(size: 16).uiFont
         label.textAlignment = .center
         label.textColor = .appColor(.black)
+        label.isAccessibilityElement = true
         
         return label
     }()
@@ -68,6 +70,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
     private lazy var illustrativeImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
+        imageView.isAccessibilityElement = false
         
         return imageView
     }()
@@ -77,6 +80,7 @@ class QuizCollectionViewCell: UICollectionViewCell {
         button.backgroundColor = UIColor.appColor(.clickableGreen)
         button.layer.cornerRadius = 14
         button.setTitleColor(.appColor(.backgroundWhite), for: .normal)
+        button.isAccessibilityElement = true
         
         return button
     }()
@@ -86,12 +90,14 @@ class QuizCollectionViewCell: UICollectionViewCell {
         button.backgroundColor = UIColor.appColor(.darkPink)
         button.layer.cornerRadius = 14
         button.setTitleColor(.appColor(.backgroundWhite), for: .normal)
+        button.isAccessibilityElement = true
         
         return button
     }()
     
     private lazy var feedbackView: QuizFeedbackCardView = {
         let view = QuizFeedbackCardView()
+        view.isAccessibilityElement = false
         
         return view
     }()
@@ -121,6 +127,11 @@ class QuizCollectionViewCell: UICollectionViewCell {
         actions.positiveAction = questionModel.actions.positiveAction
         positiveResponseButton.addTarget(self, action: #selector(didTapPositiveButton), for: .touchUpInside)
         negativeResponseButton.addTarget(self, action: #selector(didTapNegativeButton), for: .touchUpInside)
+        questionTextLabel.accessibilityLabel = "\(questionModel.question.text)"
+        questionLabel.accessibilityLabel = "\(questionModel.question.question)"
+        positiveResponseButton.accessibilityLabel = "\(questionModel.question.positiveResponseOption)"
+        negativeResponseButton.accessibilityLabel = "\(questionModel.question.negativeResponseOption)"
+
     }
     
     func configureFeedbackCardView(with model: QuizFeedbackCardViewModel, title: String){
